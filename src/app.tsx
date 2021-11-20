@@ -29,12 +29,12 @@ function App() {
       </animated.div>
       <animated.div style={contentStyles}>
         <main className='text-2xl text-gray-500'>
-          <Block title='Who do I do?'>
+          <Block title='What do I do?'>
             I am an independent developer and project manager
           </Block>
 
           <Block title='What do I use?'>
-            I use TypeScript, Python, MongoDB or PostgreSQL for most applications in development.But, oddly enough, the stack can grow, you never know what you'll need
+            I use TypeScript, Python, MongoDB or PostgreSQL for most applications in development. But, oddly enough, the stack can grow, you never know what you'll need
           </Block>
 
           <Block title='What have I done?'>
