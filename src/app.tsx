@@ -48,7 +48,7 @@ function App() {
           </Block>
 
           <Block title='Contact me'>
-            Feel free to contact me via Telegram — <Link to='https://t.me/stasnepom'>@stasnepom</Link>.Check me on <Link to='https://github.com/stasnepomn'>GitHub</Link>, or simply send me e-mail at <span className='px-3 pb-1 bg-gray-500 font-light text-white rounded-lg text-xl'>me @stasn.ru</span>
+            Feel free to contact me via Telegram — <Link to='https://t.me/stasnepom'>@stasnepom</Link>. Check my <Link to='https://github.com/stasnepomn'>GitHub</Link>, or simply send me e-mail at <span className='px-3 pb-1 bg-gray-500 font-light text-white rounded-lg text-xl'>me@stasn.ru</span>
           </Block>
         </main>
         <footer className='pt-5 text-lg text-gray-400 text-right'>~ love, SN</footer>
