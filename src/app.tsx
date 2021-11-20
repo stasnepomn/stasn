@@ -6,7 +6,7 @@ function App() {
   return (
     <div className='max-w-screen-lg mx-auto p-5 pt-10'>
       <main className='text-2xl text-gray-500'>
-        <h1 className='text-5xl py-10 break-words text-gray-800 font-semibold'>
+        <h1 className='text-5xl py-10 break-words text-gray-800 font-semibold text-center'>
           Hello, I am <span className='font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-600'>Stanislav Nepomniashchikh</span>
         </h1>
         <Block title='Who do I do?'>
@@ -27,7 +27,7 @@ function App() {
           </Subblock>
         </Block>
 
-        <Block title='How to contact me?'>
+        <Block title='Contact me'>
           Feel free to contact me via Telegram — <Link to='https://t.me/stasnepom'>@stasnepom</Link>. Check me on <Link to='https://github.com/stasnepomn'>GitHub</Link>, or simply send me e-mail at <span className='px-3 pb-1 bg-gray-500 font-light text-white rounded-lg text-xl'>me@stasn.ru</span>
         </Block>
       </main>
