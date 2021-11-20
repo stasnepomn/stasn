@@ -3,7 +3,7 @@ module.exports = {
   darkMode: false,
   theme: {
     fontFamily: {
-      sans: ['"Rubik"', "sans-serif"],
+      sans: ['"Titillium Web"', "sans-serif"],
     },
   },
   variants: {

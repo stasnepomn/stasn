@@ -7,8 +7,8 @@ type BlockProps = {
 const Block: FunctionComponent<BlockProps> = ({ title, children }) => {
   return (
     <div class='pt-7'>
-      <div className='font-medium text-blue-600 rounded-lg'>{title}</div>
-      <p className='pt-3'>{children}</p>
+      <div className='font-semibold text-gray-800 text-4xl rounded-lg'>{title}</div>
+      <p className='pt-2'>{children}</p>
     </div>
   );
 };

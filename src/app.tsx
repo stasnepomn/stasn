@@ -4,20 +4,17 @@ import Subblock from './components/Subblock'
 
 function App() {
   return (
-    <div className='max-w-screen-lg mx-auto p-5'>
-      <main className='text-2xl text-gray-500 p-10 bg-gray-50 rounded-lg border-2 border-gray-100'>
-        <h1 className='text-4xl break-words text-gray-600'>
-          Hello, I am <span className='font-medium bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-600'>Stanislav Nepomniashchikh</span>
+    <div className='max-w-screen-lg mx-auto p-5 pt-10'>
+      <main className='text-2xl text-gray-500'>
+        <h1 className='text-5xl py-10 break-words text-gray-800 font-semibold'>
+          Hello, I am <span className='font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-600'>Stanislav Nepomniashchikh</span>
         </h1>
         <Block title='Who do I do?'>
           I am an independent developer and project manager
         </Block>
 
         <Block title='What do I use?'>
-          I use TypeScript, Python, MongoDB or PostgreSQL for most applications in development
-          <Subblock>
-            But, oddly enough, the stack can grow, you never know what you need
-          </Subblock>
+          I use TypeScript, Python, MongoDB or PostgreSQL for most applications in development. But, oddly enough, the stack can grow, you never know what you'll need
         </Block>
 
         <Block title='What have I done?'>
@@ -31,10 +28,10 @@ function App() {
         </Block>
 
         <Block title='How to contact me?'>
-          Feel free to contact me via Telegram — <Link to='https://t.me/stasnepom'>@stasnepom</Link>. Check me on <Link to='https://github.com/stasnepomn'>GitHub</Link>, or simply send me e-mail at <span className='px-2 py-1 bg-gray-500 font-light text-white rounded-lg text-xl'>me@stasn.ru</span>
+          Feel free to contact me via Telegram — <Link to='https://t.me/stasnepom'>@stasnepom</Link>. Check me on <Link to='https://github.com/stasnepomn'>GitHub</Link>, or simply send me e-mail at <span className='px-3 pb-1 bg-gray-500 font-light text-white rounded-lg text-xl'>me@stasn.ru</span>
         </Block>
       </main>
-      <footer className='pt-5 text-sm text-gray-400'>~ love, SN</footer>
+      <footer className='pt-5 text-lg text-gray-400 text-right'>~ love, SN</footer>
     </div>
   )
 }
