@@ -49,7 +49,7 @@ function App() {
             </Block>
 
             <Block title='Contact me.'>
-              Via Telegram &mdash; <Link to='https://t.me/stasnepom'>@stasnepom</Link>, or send me e-mail at <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link>.
+              Via Telegram &mdash; <Link to='http://go.stasn.ru/tg'>@stasnepom</Link>, or send me e-mail at <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link>.
             </Block>
           </main>
           <footer className='pt-5 text-lg text-gray-400 text-right'>~ love, SN.</footer>
