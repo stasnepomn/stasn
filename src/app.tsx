@@ -31,25 +31,28 @@ function App() {
         <animated.div style={contentStyles}>
           <main className='text-xl md:text-2xl text-gray-500'>
             <Block title='What do I do?'>
-              I am an independent developer and project manager.
+              I am an independent developer and curious person.
             </Block>
 
             <Block title='What do I use?'>
-              I use TypeScript, Python, MongoDB or PostgreSQL for most applications in development. But, oddly enough, the stack can grow, you never know what you'll need.
+              I use Dart, TypeScript, Python, MongoDB or PostgreSQL for most applications in development. But, oddly enough, the stack can grow, you never know what you'll need.
             </Block>
 
             <Block title='What have I done?'>
-              Participated in the development of information systems and automation systems of <Link to='https://mir.ismu.baikal.ru'>Irkutsk State Medical University</Link> with PHP, Python, NodeJS, RabbitMQ and MySQL.
+              Co-founder & CTO of <Link to='https://bobbinet.com'>Bobbinet</Link> &mdash; health coaching platform with emotional AI and NFT metaverse integration.
               <Subblock>
-                Currently I've been working as Tech Lead in <Link to='https://htn.ai'>HTN Coach</Link> (SensoAI Systems Inc.), also worked with <Link to='https://engposts.com/'>EngPosts</Link>, <Link to='https://localizer.dev/'>Localizer</Link>, <Link to='https://fondu.io/'>Fondu</Link> and <Link to='https://todorant.com/'>Todorant</Link>.
+                CTO of <Link to='https://htn.ai'>HTN Coach</Link> &mdash; hybrid coaching platform for patients with chronic medical conditions in cooperation with <Link to="https://omronhealthcare.com/">Omron Healthcare</Link>.
               </Subblock>
               <Subblock>
-                Made a <Link to='https://bot-finder.com/'>bot finder extension</Link> for VC, TJ and DTF.
+                Participated in the development of information systems and automation systems of <Link to='https://mir.ismu.baikal.ru'>Irkutsk State Medical University</Link>.
+              </Subblock>
+              <Subblock>
+                Also worked with <Link to='https://engposts.com/'>EngPosts</Link>, <Link to='https://localizer.dev/'>Localizer</Link>, <Link to='https://fondu.io/'>Fondu</Link> and <Link to='https://todorant.com/'>Todorant</Link>. Made a <Link to='https://bot-finder.com/'>bot finder extension</Link> for VC, TJ and DTF.
               </Subblock>
             </Block>
 
             <Block title='Contact me.'>
-              Via Telegram &mdash; <Link to='http://go.stasn.ru/tg'>@stasnepom</Link>, or send me e-mail at <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link>.
+              Via Telegram &mdash; <Link to='http://go.stasn.ru/tg'>@stasnepom</Link>, or send me email at <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link>.
             </Block>
           </main>
           <footer className='pt-5 text-lg text-gray-400 text-right'>~ love, SN.</footer>
