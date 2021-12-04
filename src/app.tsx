@@ -1,6 +1,7 @@
 import Block from './components/Block'
 import Link from './components/Link'
 import Subblock from './components/Subblock'
+import Job from './components/Job'
 import { useSpring, animated } from 'react-spring'
 
 function App() {
@@ -31,18 +32,16 @@ function App() {
         <animated.div style={contentStyles}>
           <main className='text-2xl md:text-3xl font-light text-gray-700 leading-relaxed'>
             <Block>
-              I am an independent developer and curious person.
+              Developer and curious person.
             </Block>
 
             <Block>
-              I use Dart, TypeScript, Python, MongoDB or PostgreSQL for most applications in development. But, oddly enough, the stack can grow, you never know what you'll need.
-            </Block>
-
-            <Block>
-              Co-founder & CTO of <Link to='https://bobbinet.com'>Bobbinet</Link> &mdash; health coaching platform with emotional AI and NFT metaverse integration.
-              <Subblock>
+              <Job>
+                Co-founder & CTO of <Link to='https://bobbinet.com'>Bobbinet</Link> &mdash; health coaching platform with emotional AI and NFT metaverse integration.
+              </Job>
+              <Job>
                 CTO of <Link to='https://htn.ai'>HTN Coach</Link> &mdash; hybrid coaching platform for patients with chronic medical conditions in cooperation with <Link to="https://omronhealthcare.com/">Omron Healthcare</Link>.
-              </Subblock>
+              </Job>
               <Subblock>
                 Participated in the development of information systems and automation systems of <Link to='https://mir.ismu.baikal.ru'>Irkutsk State Medical University</Link>.
               </Subblock>

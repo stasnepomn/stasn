@@ -6,7 +6,7 @@ type LinkProps = {
 }
 
 const Link: FunctionComponent<LinkProps> = ({ to, dashed = false, children }) => {
-  if(dashed) {
+  if (dashed) {
     return (
       <a href={to} className='text-blue-600 border-b-2 border-blue-300 hover:text-green-500 hover:border-green-300 transition border-dashed'>{children}</a>
     );
