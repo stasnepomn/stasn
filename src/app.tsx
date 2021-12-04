@@ -46,12 +46,12 @@ function App() {
                 Participated in the development of information systems and automation systems of <Link to='https://mir.ismu.baikal.ru'>Irkutsk State Medical University</Link>.
               </Subblock>
               <Subblock>
-                Also worked with <Link to='https://engposts.com/'>EngPosts</Link>, <Link to='https://localizer.dev/'>Localizer</Link>, <Link to='https://fondu.io/'>Fondu</Link> and <Link to='https://todorant.com/'>Todorant</Link>. Made a <Link to='https://bot-finder.com/'>bot finder extension</Link> for VC, TJ and DTF.
+                Also worked with <Link to='https://engposts.com/'>EngPosts</Link>, <Link to='https://localizer.dev/'>Localizer</Link>, <Link to='https://fondu.io/'>Fondu</Link>, and <Link to='https://todorant.com/'>Todorant</Link>. Made a <Link to='https://bot-finder.com/'>bot finder extension</Link> for VC, TJ, and DTF.
               </Subblock>
             </Block>
 
             <Block>
-              Contact me via Telegram &mdash; <Link to='http://go.stasn.ru/tg'>@stasnepom</Link>, or send me email at <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link>.
+              Contact me via Telegram &mdash; <Link to='http://go.stasn.ru/tg'>@stasnepom</Link>, or send me an email at <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link>.
             </Block>
           </main>
           <footer className='pt-5 text-lg text-gray-400 text-right'>~ love, SN.</footer>
