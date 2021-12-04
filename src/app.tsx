@@ -22,23 +22,23 @@ function App() {
 
   return (
     <>
-      <animated.div style={titleStyles} className='mt-10 bg-gradient-to-t from-black to-gray-800 break-words'>
-        <h1 className='text-4xl md:text-5xl py-14 px-5 break-words text-white font-semibold text-center' style='-webkit-box-shadow: 0 20px 70px rgba(0, 0, 0, 0.55);-moz-box-shadow: 0 20px 70px rgba(0, 0, 0, 0.55);box-shadow: 0 20px 70px rgba(0, 0, 0, 0.55);'>
-          Hello, I am <span className='font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-600'>Stanislav Nepomniashchikh.</span>
+      <animated.div style={titleStyles} className='mt-10 bg-white break-words border border-gray-100 border-l-0 border-r-0'>
+        <h1 className='text-4xl md:text-5xl py-14 px-5 break-words text-gray-700 font-light text-center' style='-webkit-box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);-moz-box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);'>
+          Hello, I am <span className='font-medium bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-600'>Stanislav Nepomniashchikh.</span>
         </h1>
       </animated.div>
-      <div className='max-w-screen-lg mx-auto break-words p-5'>
+      <div className='max-w-screen-lg mx-auto break-words p-5 pt-5 md:pt-10'>
         <animated.div style={contentStyles}>
-          <main className='text-xl md:text-2xl text-gray-500'>
-            <Block title='What do I do?'>
+          <main className='text-2xl md:text-3xl font-light text-gray-700 leading-relaxed'>
+            <Block>
               I am an independent developer and curious person.
             </Block>
 
-            <Block title='What do I use?'>
+            <Block>
               I use Dart, TypeScript, Python, MongoDB or PostgreSQL for most applications in development. But, oddly enough, the stack can grow, you never know what you'll need.
             </Block>
 
-            <Block title='What have I done?'>
+            <Block>
               Co-founder & CTO of <Link to='https://bobbinet.com'>Bobbinet</Link> &mdash; health coaching platform with emotional AI and NFT metaverse integration.
               <Subblock>
                 CTO of <Link to='https://htn.ai'>HTN Coach</Link> &mdash; hybrid coaching platform for patients with chronic medical conditions in cooperation with <Link to="https://omronhealthcare.com/">Omron Healthcare</Link>.
@@ -51,8 +51,8 @@ function App() {
               </Subblock>
             </Block>
 
-            <Block title='Contact me.'>
-              Via Telegram &mdash; <Link to='http://go.stasn.ru/tg'>@stasnepom</Link>, or send me email at <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link>.
+            <Block>
+              Contact me via Telegram &mdash; <Link to='http://go.stasn.ru/tg'>@stasnepom</Link>, or send me email at <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link>.
             </Block>
           </main>
           <footer className='pt-5 text-lg text-gray-400 text-right'>~ love, SN.</footer>
