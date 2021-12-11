@@ -24,13 +24,13 @@ function App() {
   return (
     <>
       <animated.div style={titleStyles} className='mt-10 bg-white break-words border border-gray-100 border-l-0 border-r-0'>
-        <h1 className='text-4xl md:text-5xl py-14 px-5 break-words text-gray-700 font-light text-center' style='-webkit-box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);-moz-box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);'>
+        <h1 className='text-3xl md:text-4xl py-14 px-5 break-words text-gray-700 font-light text-center' style='-webkit-box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);-moz-box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);'>
           Hello, I am <span className='font-medium bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-600'>Stanislav Nepomniashchikh.</span>
         </h1>
       </animated.div>
       <div className='max-w-screen-lg mx-auto break-words p-5 pt-5 md:pt-10'>
         <animated.div style={contentStyles}>
-          <main className='text-2xl md:text-3xl font-light text-gray-700 leading-relaxed'>
+          <main className='text-xl md:text-2xl font-light text-gray-700'>
             <Block>
               Developer and curious person.
             </Block>
