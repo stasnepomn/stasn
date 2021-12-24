@@ -1,8 +1,8 @@
-import Block from './components/Block'
-import Link from './components/Link'
-import Subblock from './components/Subblock'
-import Job from './components/Job'
 import { useSpring, animated } from 'react-spring'
+import Card from './components/Card/Card'
+import CardDescription from './components/Card/CardDescription'
+import CardTitle from './components/Card/CardTitle'
+import Link from './components/Link'
 
 function App() {
   const contentStyles = useSpring({
@@ -23,37 +23,24 @@ function App() {
 
   return (
     <>
-      <animated.div style={titleStyles} className='mt-10 bg-white break-words border border-gray-100 border-l-0 border-r-0'>
-        <h1 className='text-3xl md:text-4xl py-14 px-5 break-words text-gray-700 font-light text-center' style='-webkit-box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);-moz-box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);box-shadow: 0 20px 70px rgba(0, 0, 0, 0.10);'>
-          Hello, I am <span className='font-medium bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-blue-600'>Stanislav Nepomniashchikh.</span>
+      <animated.div style={titleStyles} className='mt-10 bg-white break-words border shadow-lg shadow-gray-500/10 border-gray-200 border-l-0 border-r-0'>
+        <h1 className='text-3xl md:text-4xl py-14 px-5 break-words font-light text-gray-700 text-center'>
+          Hello, I am <span className='font-medium bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-sky-600'>Stanislav Nepomniashchikh.</span>
         </h1>
       </animated.div>
       <div className='max-w-screen-lg mx-auto break-words p-5 pt-5 md:pt-10'>
         <animated.div style={contentStyles}>
-          <main className='text-xl md:text-2xl font-light text-gray-700'>
-            <Block>
-              Developer and curious person.
-            </Block>
-
-            <Block>
-              <Job>
-                Co-founder & CTO of <Link to='https://bobbinet.com'>Bobbinet</Link> &mdash; health coaching platform with emotional AI and NFT metaverse integration.
-              </Job>
-              <Job>
-                CTO of <Link to='https://htn.ai'>HTN Coach</Link> &mdash; hybrid coaching platform for patients with chronic medical conditions in cooperation with <Link to="https://omronhealthcare.com/">Omron Healthcare</Link>.
-              </Job>
-              <Subblock>
-                Participated in the development of information systems and automation systems of <Link to='https://mir.ismu.baikal.ru'>Irkutsk State Medical University</Link>.
-              </Subblock>
-              <Subblock>
-                Also worked with <Link to='https://engposts.com/'>EngPosts</Link>, <Link to='https://localizer.dev/'>Localizer</Link>, <Link to='https://fondu.io/'>Fondu</Link>, and <Link to='https://todorant.com/'>Todorant</Link>. Made a <Link to='https://bot-finder.com/'>bot finder extension</Link> for VC, TJ, and DTF.
-              </Subblock>
-            </Block>
-
-            <Block>
-              Contact me via Telegram &mdash; <Link to='http://go.stasn.ru/tg'>@stasnepom</Link>, or send me an email at <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link>.
-            </Block>
+          <main class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 items-start text-gray-700">
+            <Card>
+              <CardTitle>CTO of <Link to='https://htn.ai'>HTN Coach</Link></CardTitle>
+              <CardDescription>Hybrid coaching platform and medical data analytics company for patients with chronic medical conditions in partnership with <Link to='https://omronhealthcare.com/'>Omron Healthcare</Link>.</CardDescription>
+            </Card>
+            <Card>
+              <CardTitle>Co-founder & CTO of <Link to='https://bobbinet.com'>Bobbinet</Link></CardTitle>
+              <CardDescription>Revolutionary Health 4.0 platform. Provides access to a decentralized, anonymous health pass to everyone around the globe who needs healthcare.</CardDescription>
+            </Card>
           </main>
+          <div className='text-xl md:text-2xl font-light text-center pt-10 text-gray-700'>Contact me <Link to='https://t.me/stasnepom'>@stasnepom</Link> or <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link></div>
           <footer className='pt-5 text-lg text-gray-400 text-right'>~ love, SN.</footer>
         </animated.div>
       </div>
