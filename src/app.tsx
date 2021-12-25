@@ -3,6 +3,7 @@ import Card from './components/Card/Card'
 import CardDescription from './components/Card/CardDescription'
 import CardTitle from './components/Card/CardTitle'
 import Link from './components/Link'
+import Smile from './assets/smile.svg'
 
 function App() {
   const contentStyles = useSpring({
@@ -40,8 +41,8 @@ function App() {
               <CardDescription>Revolutionary Health 4.0 platform. Provides access to a decentralized, anonymous health pass to everyone around the globe who needs healthcare.</CardDescription>
             </Card>
           </main>
-          <div className='text-xl md:text-2xl font-light text-center pt-10 text-gray-700'>Contact me <Link to='https://t.me/stasnepom'>@stasnepom</Link> or <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link></div>
-          <footer className='pt-5 text-lg text-gray-400 text-right'>~ love, SN.</footer>
+          <img src={Smile} className='mx-auto pt-10' />
+          <div className='text-xl md:text-2xl font-light text-center pb-10 text-gray-700'>Contact me <Link to='https://t.me/stasnepom'>@stasnepom</Link> or <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link></div>
         </animated.div>
       </div>
     </>
