@@ -40,6 +40,10 @@ function App() {
               <CardTitle><Link to='https://bobbinet.com'>Bobbinet</Link></CardTitle>
               <CardDescription>Revolutionary Health 4.0 platform. Provides access to a decentralized, anonymous health pass to everyone around the globe who needs healthcare.</CardDescription>
             </Card>
+            <Card>
+              <CardTitle>Habba &mdash; soon</CardTitle>
+              <CardDescription>Minimalistic service that provides you the best way to track your goals and habits. Simple and smart.</CardDescription>
+            </Card>
           </main>
           <img src={Smile} className='mx-auto pt-10' />
           <div className='text-xl md:text-2xl font-light text-center pb-10 text-gray-700'>Contact me <Link to='https://t.me/stasnepom'>@stasnepom</Link> or <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link></div>
