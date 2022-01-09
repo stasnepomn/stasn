@@ -24,10 +24,14 @@ function App() {
 
   return (
     <>
-      <animated.div style={titleStyles} className='mt-10 bg-white break-words border shadow-lg shadow-gray-500/10 border-gray-200 border-l-0 border-r-0'>
-        <h1 className='text-3xl md:text-4xl py-14 px-5 break-words font-light text-gray-700 text-center'>
+      <animated.div style={titleStyles} className='mt-10 py-14 px-5 bg-white break-words border shadow-lg shadow-gray-500/10 border-gray-200 border-l-0 border-r-0'>
+        <h1 className='text-3xl md:text-4xl break-words font-light text-gray-700 text-center'>
           Hello, I am <span className='font-medium bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-sky-600'>Stanislav Nepomniashchikh.</span>
         </h1>
+        <div className='text-xl pt-4 first-letter:md:text-2xl font-light text-gray-700 flex space-x-5 items-center justify-center'>
+          <Link to='https://t.me/stasnepom'>@stasnepom</Link>
+          <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link>
+        </div>
       </animated.div>
       <div className='max-w-screen-lg mx-auto break-words p-5 pt-5 md:pt-10'>
         <animated.div style={contentStyles}>
@@ -45,8 +49,7 @@ function App() {
               <CardDescription>Minimalistic service that provides you the best way to track your goals and habits. Simple and smart.</CardDescription>
             </Card>
           </main>
-          <img src={Smile} className='mx-auto pt-10' />
-          <div className='text-xl md:text-2xl font-light text-center pb-10 text-gray-700'>Contact me <Link to='https://t.me/stasnepom'>@stasnepom</Link> or <Link to='mailto:me@stasn.ru' dashed>me@stasn.ru</Link></div>
+          <img src={Smile} className='mx-auto pt-20 pb-10' />
         </animated.div>
       </div>
     </>
