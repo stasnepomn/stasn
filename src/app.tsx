@@ -33,11 +33,11 @@ function App() {
         <animated.div style={contentStyles}>
           <main class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 items-start text-gray-700">
             <Card>
-              <CardTitle>CTO of <Link to='https://htn.ai'>HTN Coach</Link></CardTitle>
+              <CardTitle><Link to='https://htn.ai'>HTN Coach</Link></CardTitle>
               <CardDescription>Hybrid coaching platform and medical data analytics company for patients with chronic medical conditions in partnership with <Link to='https://omronhealthcare.com/'>Omron Healthcare</Link>.</CardDescription>
             </Card>
             <Card>
-              <CardTitle>Co-founder & CTO of <Link to='https://bobbinet.com'>Bobbinet</Link></CardTitle>
+              <CardTitle><Link to='https://bobbinet.com'>Bobbinet</Link></CardTitle>
               <CardDescription>Revolutionary Health 4.0 platform. Provides access to a decentralized, anonymous health pass to everyone around the globe who needs healthcare.</CardDescription>
             </Card>
           </main>
