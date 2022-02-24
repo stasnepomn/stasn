@@ -34,7 +34,7 @@ function App() {
         </div>
       </animated.div>
       <div className='max-w-screen-lg mx-auto break-words p-5 pt-5 md:pt-10'>
-        <div className='pb-10 text-center font-bold underline text-2xl select-none'>нет войне</div>
+        <a className='hover:opacity-70 transition block p-10 mb-10 bg-white rounded-lg text-center font-bold underline text-2xl select-none border-2' href='https://mailchi.mp/getkit.news/peace'>нет войне</a>
         <animated.div style={contentStyles}>
           <main class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 items-start text-gray-700">
             <Card>
@@ -50,7 +50,7 @@ function App() {
               <CardDescription>Minimalistic service that provides you the best way to track your goals and habits. Simple and smart.</CardDescription>
             </Card>
           </main>
-          {/* <img src={Smile} className='mx-auto pt-20 pb-10' /> */}
+          <img src={Smile} className='mx-auto pt-20 pb-10' />
         </animated.div>
       </div>
     </>
