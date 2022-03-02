@@ -38,12 +38,9 @@ function App() {
         </div>
       </animated.div>
       <div className="max-w-screen-lg mx-auto break-words p-5 pt-5 md:pt-10">
-        <a
-          className="hover:opacity-70 transition block p-10 mb-10 bg-black text-white rounded-lg text-center font-bold underline text-2xl select-none"
-          href="https://mailchi.mp/getkit.news/peace"
-        >
+        <div className="hover:opacity-70 transition p-10 mb-10 bg-black text-white rounded-lg text-center font-bold underline text-2xl select-none">
           чума [спецоперация] голод смерть
-        </a>
+        </div>
         <animated.div style={contentStyles}>
           <main class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 items-start text-gray-700">
             <Card>
