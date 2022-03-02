@@ -42,7 +42,7 @@ function App() {
           className="hover:opacity-70 transition block p-10 mb-10 bg-black text-white rounded-lg text-center font-bold underline text-2xl select-none"
           href="https://mailchi.mp/getkit.news/peace"
         >
-          нет войне
+          чума война голод смерть
         </a>
         <animated.div style={contentStyles}>
           <main class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 items-start text-gray-700">
