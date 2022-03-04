@@ -3,7 +3,7 @@ import Card from "./components/Card/Card";
 import CardDescription from "./components/Card/CardDescription";
 import CardTitle from "./components/Card/CardTitle";
 import Link from "./components/Link";
-import Smile from "./assets/smile.svg";
+import Apple from "./assets/apple.svg";
 
 function App() {
   const contentStyles = useSpring({
@@ -38,8 +38,8 @@ function App() {
         </div>
       </animated.div>
       <div className="max-w-screen-lg mx-auto break-words p-5 pt-5 md:pt-10">
-        <div className="hover:opacity-70 transition p-10 mb-10 bg-black text-white rounded-lg text-center font-bold underline text-2xl select-none">
-          чума [спецоперация] голод смерть
+        <div className="transition p-10 mb-10 bg-black text-white rounded-lg text-center font-bold text-2xl select-none">
+          нет никаких оправданий
         </div>
         <animated.div style={contentStyles}>
           <main class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 items-start text-gray-700">
@@ -71,7 +71,7 @@ function App() {
               </CardDescription>
             </Card>
           </main>
-          {/* <img src={Smile} className='mx-auto pt-20 pb-10' /> */}
+          <img src={Apple} className="mx-auto pt-20 pb-10" />
         </animated.div>
       </div>
     </>
