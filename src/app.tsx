@@ -71,7 +71,7 @@ function App() {
               </CardDescription>
             </Card>
           </main>
-          <img src={Apple} className="mx-auto pt-20 pb-10" />
+          <img src={Apple} className="mx-auto h-52 pt-20 pb-10" />
         </animated.div>
       </div>
     </>
