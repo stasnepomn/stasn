@@ -38,7 +38,7 @@ function App() {
         </div>
       </animated.div>
       <div className="max-w-screen-lg mx-auto break-words p-5 pt-5 md:pt-10">
-        <div className="transition px-10 py-32 mb-10 bg-black text-white rounded-lg text-center font-bold text-3xl uppercase select-none">
+        <div className="transition px-10 py-32 mb-10 bg-black text-white rounded-lg text-center font-bold text-3xl tracking-widest uppercase select-none">
           нет никаких оправданий
         </div>
         <animated.div style={contentStyles}>
