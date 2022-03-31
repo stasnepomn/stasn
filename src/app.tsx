@@ -22,7 +22,7 @@ function App() {
     <>
       <animated.div
         style={titleStyles}
-        className="mt-10 py-14 px-5 bg-white break-words border shadow-lg shadow-gray-500/10 border-gray-200 border-l-0 border-r-0"
+        className="mt-10 py-14 px-5"
       >
         <h1 className="text-3xl md:text-4xl break-words font-light text-gray-700 text-center">
           Hello, I am{" "}
@@ -38,11 +38,7 @@ function App() {
         </div>
       </animated.div>
       <div className="max-w-screen-lg mx-auto break-words p-5 pt-5 md:pt-10">
-        <div className="transition px-10 py-32 mb-10 bg-black text-white rounded-lg text-center leading-loose font-bold text-3xl tracking-widest uppercase select-none">
-          нет никаких оправданий
-          <br /> белое &mdash; всегда белое
-          <br /> чёрное &mdash; всегда чёрное
-        </div>
+      <div className='bg-gray-800 p-4 select-none text-white rounded-lg mb-10 text-center text-lg font-medium'>The war is not meant to be won, it is meant to be continuous.</div>
         <animated.div style={contentStyles}>
           <main class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 items-start text-gray-700">
             <Card>
@@ -73,7 +69,7 @@ function App() {
               </CardDescription>
             </Card>
           </main>
-          <img src={Apple} className="mx-auto h-52 pt-20 pb-10" />
+          <img src={Apple} className="mx-auto h-52 py-20 mb-10" />
         </animated.div>
       </div>
     </>
