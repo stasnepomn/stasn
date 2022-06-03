@@ -20,25 +20,29 @@ function App() {
 
   return (
     <>
-      <animated.div
-        style={titleStyles}
-        className="mt-10 py-14 px-5"
-      >
+      <div className="bg-gradient-to-r from-yellow-400 to-sky-600 p-4 select-none text-white text-center text-sm md:text-lg font-medium">
+        Stop.
+      </div>
+      <animated.div style={titleStyles} className="mt-10 pt-14 px-5">
         <h1 className="text-3xl md:text-4xl break-words font-light text-gray-700 text-center">
           Hello, I am{" "}
           <span className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-sky-600">
             Stanislav Nepomniashchikh.
           </span>
         </h1>
-        <div className="text-xl pt-4 first-letter:md:text-2xl font-light text-gray-700 flex space-x-5 items-center justify-center">
+        <div className="text-xl md:text-2xl pt-3 font-light text-gray-400 text-center">
+          <span className="font-medium text-gray-500">Python</span> and{" "}
+          <span className="font-medium text-gray-500">TypeScript</span> full
+          stack developer.
+        </div>
+        <div className="text-xl pt-10 md:text-2xl font-light text-gray-700 flex space-x-5 items-center justify-center">
           <Link to="https://t.me/stasnepom">@stasnepom</Link>
           <Link to="mailto:me@stasn.ru" dashed>
             me@stasn.ru
           </Link>
         </div>
       </animated.div>
-      <div className="max-w-screen-lg mx-auto break-words p-5 pt-5 md:pt-10">
-      <div className='bg-gray-800 p-4 select-none text-white rounded-lg mb-10 text-center text-lg font-medium'>The war is not meant to be won, it is meant to be continuous.</div>
+      <div className="max-w-screen-lg mx-auto break-words p-5 pt-14">
         <animated.div style={contentStyles}>
           <main class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10 items-start text-gray-700">
             <Card>
@@ -62,11 +66,8 @@ function App() {
               </CardDescription>
             </Card>
             <Card>
-              <CardTitle>Habba &mdash; soon</CardTitle>
-              <CardDescription>
-                Minimalistic service that provides you the best way to track
-                your goals and habits. Simple and smart.
-              </CardDescription>
+              <CardTitle>Habba</CardTitle>
+              <CardDescription>To be announced soon.</CardDescription>
             </Card>
           </main>
           <img src={Apple} className="mx-auto h-52 py-20 mb-10" />
