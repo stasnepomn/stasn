@@ -1,5 +1,5 @@
 import { useSpring, animated } from "react-spring";
-import Card from "./components/Card/Card";
+import Card from "./components/Card";
 import Link from "./components/Link";
 import Htn from "./assets/htn.svg";
 import Bobbinet from "./assets/bobbinet.svg";
