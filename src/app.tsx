@@ -5,6 +5,7 @@ import Htn from "./assets/htn.svg";
 import Bobbinet from "./assets/bobbinet.svg";
 import Habba from "./assets/habba.svg";
 import Abit from "./assets/abit.svg";
+import Cat from "./assets/cat.svg";
 
 function App() {
   const contentStyles = useSpring({
@@ -47,11 +48,15 @@ function App() {
   ];
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="h-screen flex flex-col overflow-hidden">
       <div className="bg-gradient-to-r from-yellow-400 to-sky-600 p-4 select-none text-white text-center text-sm md:text-lg font-medium">
         Stop.
       </div>
-      <div className="flex flex-1 items-center flex-col justify-center py-10">
+      <div className="flex flex-1 items-center flex-col justify-center py-10 relative">
+        <img
+          src={Cat}
+          className="z-0 absolute -bottom-20 -right-12 w-52 md:w-72"
+        />
         <animated.div style={titleStyles} className="mt-10 px-5">
           <h1 className="text-3xl md:text-4xl break-words font-light text-gray-700 text-center">
             Hello, I am{" "}
