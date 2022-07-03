@@ -5,7 +5,6 @@ import Htn from "./assets/htn.svg";
 import Bobbinet from "./assets/bobbinet.svg";
 import Habba from "./assets/habba.svg";
 import Abit from "./assets/abit.svg";
-import Cat from "./assets/cat.svg";
 
 function App() {
   const contentStyles = useSpring({
@@ -25,25 +24,25 @@ function App() {
       title: "HTN Coach",
       image: Htn,
       link: "https://htn.ai",
-      soon: false,
+      comment: false,
     },
     {
       title: "Bobbinet",
       image: Bobbinet,
       link: "https://bobbinet.com",
-      soon: false,
+      comment: false,
     },
     {
       title: "Habba",
       image: Habba,
       link: "https://habba.app",
-      soon: true,
+      comment: "soon",
     },
     {
       title: "Abit",
       image: Abit,
       link: "#",
-      soon: true,
+      comment: "alpha",
     },
   ];
 
@@ -53,10 +52,6 @@ function App() {
         Stop.
       </div>
       <div className="flex flex-1 items-center flex-col justify-center py-10 relative">
-        <img
-          src={Cat}
-          className="z-0 absolute -bottom-20 -right-12 w-52 md:w-72"
-        />
         <animated.div style={titleStyles} className="mt-10 px-5">
           <h1 className="text-3xl md:text-4xl break-words font-light text-gray-700 text-center">
             Hello, I am{" "}
@@ -82,7 +77,7 @@ function App() {
             <main class="flex items-center justify-center space-x-5">
               {projects.map((project) => (
                 <Card>
-                  {!project.soon ? (
+                  {!project.comment ? (
                     <a href={project.link} target="_blank">
                       <img
                         src={project.image}
@@ -93,7 +88,7 @@ function App() {
                   ) : (
                     <>
                       <span className="bg-red-700 text-sm text-white font-medium py-1 px-2 rounded-full absolute z-10 top-0 right-0">
-                        soon
+                        {project.comment}
                       </span>
                       <img
                         src={project.image}
