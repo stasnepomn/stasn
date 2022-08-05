@@ -5,6 +5,7 @@ import Htn from "./assets/htn.svg";
 import Bobbinet from "./assets/bobbinet.svg";
 import Habba from "./assets/habba.svg";
 import Abit from "./assets/abit.svg";
+import Allay from "./assets/allay.svg";
 
 function App() {
   const contentStyles = useSpring({
@@ -33,16 +34,22 @@ function App() {
       comment: false,
     },
     {
+      title: "Abit",
+      image: Abit,
+      link: "#",
+      comment: "pilot",
+    },
+    {
       title: "Habba",
       image: Habba,
       link: "https://habba.app",
       comment: "soon",
     },
     {
-      title: "Abit",
-      image: Abit,
+      title: "Allay",
+      image: Allay,
       link: "#",
-      comment: "alpha",
+      comment: "soon",
     },
   ];
 
