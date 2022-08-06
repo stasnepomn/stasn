@@ -84,8 +84,8 @@ function App() {
             </Link>
           </div>
         </animated.div>
-        <div className="break-words p-5 mt-14 w-full shadow-lg border-t border-gray-100 shadow-gray-100">
-          <animated.div style={contentStyles}>
+        <animated.div style={contentStyles} className="w-full">
+          <div className="break-words p-5 mt-14 w-full shadow-lg border-t border-gray-100 shadow-gray-100">
             <main class="flex flex-col md:flex-row items-center justify-center space-x-0 space-y-5 md:space-y-0 md:space-x-5">
               {projects.map((project) => (
                 <Card>
@@ -112,8 +112,8 @@ function App() {
                 </Card>
               ))}
             </main>
-          </animated.div>
-        </div>
+          </div>
+        </animated.div>
       </div>
     </div>
   );
