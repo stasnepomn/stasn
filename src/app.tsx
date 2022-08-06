@@ -7,6 +7,7 @@ import Habba from "./assets/habba.svg";
 import Abit from "./assets/abit.svg";
 import Allay from "./assets/allay.svg";
 import Engposts from "./assets/engposts.svg";
+import Portrait from "./assets/portrait.jpg";
 
 function App() {
   const contentStyles = useSpring({
@@ -64,6 +65,7 @@ function App() {
     <div className="h-screen flex flex-col">
       <div className="flex flex-1 items-center flex-col justify-center py-10 relative">
         <animated.div style={titleStyles} className="mt-10 px-5">
+          <img src={Portrait} className="w-60 h-60 mx-auto mb-5" />
           <h1 className="text-3xl md:text-4xl break-words font-light text-gray-700 text-center">
             Hello, I am{" "}
             <span className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-sky-600">
