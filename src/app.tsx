@@ -6,6 +6,7 @@ import Bobbinet from "./assets/bobbinet.svg";
 import Habba from "./assets/habba.svg";
 import Abit from "./assets/abit.svg";
 import Allay from "./assets/allay.svg";
+import Engposts from "./assets/engposts.svg";
 
 function App() {
   const contentStyles = useSpring({
@@ -34,6 +35,12 @@ function App() {
       comment: false,
     },
     {
+      title: "EngPosts",
+      image: Engposts,
+      link: "https://engposts.com",
+      comment: false,
+    },
+    {
       title: "Abit",
       image: Abit,
       link: "#",
@@ -54,7 +61,7 @@ function App() {
   ];
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden">
+    <div className="h-screen flex flex-col">
       <div className="bg-gradient-to-r from-yellow-400 to-sky-600 p-4 select-none text-white text-center text-sm md:text-lg font-medium">
         Stop.
       </div>
@@ -77,9 +84,9 @@ function App() {
             </Link>
           </div>
         </animated.div>
-        <div className="max-w-screen-lg mx-auto break-words p-5 pt-14">
+        <div className="break-words p-5 mt-14 w-full shadow-lg border-t border-gray-100 shadow-gray-100">
           <animated.div style={contentStyles}>
-            <main class="flex items-center justify-center space-x-5">
+            <main class="flex flex-col md:flex-row items-center justify-center space-x-0 space-y-5 md:space-y-0 md:space-x-5">
               {projects.map((project) => (
                 <Card>
                   {!project.comment ? (
