@@ -73,7 +73,7 @@ function App() {
             </span>
           </h1>
           <div className="text-xl md:text-2xl pt-3 font-light text-gray-400 text-center">
-            Data engineer and backend developer.
+            Developer of impressive things and just a curious person.
           </div>
           <div className="text-xl pt-10 md:text-2xl font-light text-gray-700 flex flex-col md:flex-row md:space-x-5 space-y-2 md:space-y-0 items-center justify-center break-before-all">
             <Link to="https://blog.stasn.me/">blog</Link>
