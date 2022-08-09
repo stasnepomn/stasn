@@ -76,6 +76,7 @@ function App() {
             Data engineer and backend developer.
           </div>
           <div className="text-xl pt-10 md:text-2xl font-light text-gray-700 flex flex-col md:flex-row md:space-x-5 space-y-2 md:space-y-0 items-center justify-center break-before-all">
+            <Link to="https://blog.stasn.me/">blog</Link>
             <Link to="https://t.me/stasnepom">telegram</Link>
             <Link to="https://github.com/stasnepomn">github</Link>
             <Link to="mailto:contact@stasn.ru" dashed>
