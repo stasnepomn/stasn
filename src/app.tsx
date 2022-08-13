@@ -7,6 +7,7 @@ import Habba from "./assets/habba.svg";
 import Abit from "./assets/abit.svg";
 import Allay from "./assets/allay.svg";
 import Engposts from "./assets/engposts.svg";
+import Orakle from "./assets/orakle.svg";
 import Portrait from "./assets/portrait.jpg";
 
 function App() {
@@ -46,6 +47,12 @@ function App() {
       image: Abit,
       link: "#",
       comment: "pilot",
+    },
+    {
+      title: "Orakle",
+      image: Orakle,
+      link: "#",
+      comment: "soon",
     },
     {
       title: "Habba",
