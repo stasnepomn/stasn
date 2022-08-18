@@ -7,7 +7,7 @@ import Habba from "./assets/habba.svg";
 import Abit from "./assets/abit.svg";
 import Allay from "./assets/allay.svg";
 import Engposts from "./assets/engposts.svg";
-import Orakle from "./assets/orakle.svg";
+import Orakl from "./assets/orakl.svg";
 import Portrait from "./assets/portrait.jpg";
 
 function App() {
@@ -49,10 +49,10 @@ function App() {
       comment: "pilot",
     },
     {
-      title: "Orakle",
-      image: Orakle,
-      link: "#",
-      comment: "soon",
+      title: "Orakl",
+      image: Orakl,
+      link: "https://orakllab.xyz/",
+      comment: false,
     },
     {
       title: "Habba",
