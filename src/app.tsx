@@ -75,6 +75,7 @@ function App() {
         src={Blob}
         autoPlay
         loop
+        muted
         className="absolute top-0 left-0 h-screen w-screen object-cover"
       />
       <div className="h-screen flex flex-col">
