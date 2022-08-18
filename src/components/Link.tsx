@@ -14,7 +14,7 @@ const Link: FunctionComponent<LinkProps> = ({
     return (
       <a
         href={to}
-        className="text-sky-600 border-b-2 border-sky-300 hover:text-green-500 hover:border-green-300 group-hover:text-green-500 group-hover:border-green-300 transition border-dashed"
+        className="text-sky-600 font-medium border-b-2 border-sky-500 hover:text-green-600 hover:border-green-500 group-hover:text-green-500 group-hover:border-green-300 transition border-dashed"
       >
         {children}
       </a>
@@ -24,7 +24,7 @@ const Link: FunctionComponent<LinkProps> = ({
     <a
       href={to}
       target="_blank"
-      className="text-sky-600 border-b-2 border-sky-300 hover:text-green-500 hover:border-green-300 group-hover:text-green-500 group-hover:border-green-300 transition"
+      className="text-sky-600 border-b-2 font-medium border-sky-500 hover:text-green-600 hover:border-green-500 group-hover:text-green-500 group-hover:border-green-300 transition"
     >
       {children}
     </a>
