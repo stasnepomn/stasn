@@ -1,8 +1,8 @@
-import { FunctionalComponent } from "preact";
+import { FunctionalComponent } from 'preact';
 
 const Card: FunctionalComponent = ({ children }) => {
   return (
-    <div className="cursor-default group hover:scale-110 transition relative">
+    <div className="group relative cursor-default transition hover:scale-110">
       {children}
     </div>
   );

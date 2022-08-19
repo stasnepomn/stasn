@@ -1,15 +1,15 @@
-import { useSpring, animated } from "react-spring";
-import Card from "./components/Card";
-import Link from "./components/Link";
-import Htn from "./assets/htn.svg";
-import Bobbinet from "./assets/bobbinet.svg";
-import Habba from "./assets/habba.svg";
-import Abit from "./assets/abit.svg";
-import Allay from "./assets/allay.svg";
-import Engposts from "./assets/engposts.svg";
-import Orakl from "./assets/orakl.svg";
-import Portrait from "./assets/portrait.png";
-import Blob from "./assets/blob.mp4";
+import { useSpring, animated } from 'react-spring';
+import Card from './components/Card';
+import Link from './components/Link';
+import Htn from './assets/htn.svg';
+import Bobbinet from './assets/bobbinet.svg';
+import Habba from './assets/habba.svg';
+import Abit from './assets/abit.svg';
+import Allay from './assets/allay.svg';
+import Engposts from './assets/engposts.svg';
+import Orakl from './assets/orakl.svg';
+import Portrait from './assets/portrait.png';
+import Blob from './assets/blob.mp4';
 
 function App() {
   const contentStyles = useSpring({
@@ -26,46 +26,46 @@ function App() {
 
   const projects = [
     {
-      title: "HTN Coach",
+      title: 'HTN Coach',
       image: Htn,
-      link: "https://htn.ai",
+      link: 'https://htn.ai',
       comment: false,
     },
     {
-      title: "Bobbinet",
+      title: 'Bobbinet',
       image: Bobbinet,
-      link: "https://bobbinet.com",
+      link: 'https://bobbinet.com',
       comment: false,
     },
     {
-      title: "EngPosts",
+      title: 'EngPosts',
       image: Engposts,
-      link: "https://engposts.com",
+      link: 'https://engposts.com',
       comment: false,
     },
     {
-      title: "Abit",
+      title: 'Abit',
       image: Abit,
-      link: "#",
-      comment: "pilot",
+      link: '#',
+      comment: 'pilot',
     },
     {
-      title: "Orakl",
+      title: 'Orakl',
       image: Orakl,
-      link: "https://orakllab.xyz/",
+      link: 'https://orakllab.xyz/',
       comment: false,
     },
     {
-      title: "Habba",
+      title: 'Habba',
       image: Habba,
-      link: "https://habba.app",
-      comment: "soon",
+      link: 'https://habba.app',
+      comment: 'soon',
     },
     {
-      title: "Allay",
+      title: 'Allay',
       image: Allay,
-      link: "#",
-      comment: "soon",
+      link: '#',
+      comment: 'soon',
     },
   ];
 
@@ -78,23 +78,23 @@ function App() {
         muted
         className="absolute top-0 left-0 h-screen w-screen object-cover"
       />
-      <div className="h-screen flex flex-col">
-        <div className="flex flex-1 items-center flex-col justify-center py-10 relative">
+      <div className="flex h-screen flex-col">
+        <div className="relative flex flex-1 flex-col items-center justify-center py-10">
           <animated.div style={titleStyles} className="mt-10 px-5">
             <img
               src={Portrait}
-              className="w-60 h-60 mx-auto mb-5 rounded-full"
+              className="mx-auto mb-5 h-60 w-60 rounded-full"
             />
-            <h1 className="text-3xl md:text-4xl break-words font-light text-gray-700 text-center">
-              Hello, I am{" "}
-              <span className="font-medium bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-sky-600">
+            <h1 className="break-words text-center text-3xl font-light text-gray-700 md:text-4xl">
+              Hello, I am{' '}
+              <span className="bg-gradient-to-r from-green-600 to-sky-600 bg-clip-text font-medium text-transparent">
                 Stanislav Nepomniashchikh.
               </span>
             </h1>
-            <div className="text-xl md:text-2xl pt-3 font-light text-black text-opacity-40 text-center">
+            <div className="pt-3 text-center text-xl font-light text-black text-opacity-40 md:text-2xl">
               Blockchain developer.
             </div>
-            <div className="text-xl pt-10 md:text-2xl font-light text-gray-700 flex flex-col md:flex-row md:space-x-5 space-y-2 md:space-y-0 items-center justify-center break-before-all">
+            <div className="flex break-before-all flex-col items-center justify-center space-y-2 pt-10 text-xl font-light text-gray-700 md:flex-row md:space-x-5 md:space-y-0 md:text-2xl">
               <Link to="https://blog.stasn.me/">blog</Link>
               <Link to="https://t.me/stasnepom">telegram</Link>
               <Link to="https://github.com/stasnepomn">github</Link>
@@ -104,8 +104,8 @@ function App() {
             </div>
           </animated.div>
           <animated.div style={contentStyles} className="w-full">
-            <div className="break-words p-5 mt-14 w-full bg-white bg-opacity-20">
-              <main class="flex flex-col md:flex-row items-center justify-center space-x-0 space-y-5 md:space-y-0 md:space-x-5">
+            <div className="mt-14 w-full break-words bg-white bg-opacity-20 p-5">
+              <main className="flex flex-col items-center justify-center space-x-0 space-y-5 md:flex-row md:space-y-0 md:space-x-5">
                 {projects.map((project) => (
                   <Card>
                     {!project.comment ? (
@@ -113,18 +113,18 @@ function App() {
                         <img
                           src={project.image}
                           alt={project.title}
-                          className="w-24 h-24"
+                          className="h-24 w-24"
                         />
                       </a>
                     ) : (
                       <>
-                        <span className="bg-red-700 text-sm text-white font-medium py-1 px-2 rounded-full absolute z-10 top-0 right-0">
+                        <span className="absolute top-0 right-0 z-10 rounded-full bg-red-700 py-1 px-2 text-sm font-medium text-white">
                           {project.comment}
                         </span>
                         <img
                           src={project.image}
                           alt={project.title}
-                          className="w-24 h-24 grayscale"
+                          className="h-24 w-24 grayscale"
                         />
                       </>
                     )}
