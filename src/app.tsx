@@ -92,7 +92,7 @@ function App() {
               </span>
             </h1>
             <div className="pt-3 text-center text-xl font-light text-black text-opacity-40 md:text-2xl">
-              Blockchain developer.
+              Developer.
             </div>
             <div className="flex break-before-all flex-col items-center justify-center space-y-2 pt-10 text-xl font-light text-gray-700 md:flex-row md:space-x-5 md:space-y-0 md:text-2xl">
               <Link to="https://blog.stasn.me/">blog</Link>
