@@ -95,7 +95,7 @@ function App() {
               Developer.
             </div>
             <div className="flex break-before-all flex-col items-center justify-center space-y-2 pt-10 text-xl font-light text-gray-700 md:flex-row md:space-x-5 md:space-y-0 md:text-2xl">
-              <Link to="https://blog.stasn.me/">blog</Link>
+              <Link to="https://t.me/stasnblog">blog</Link>
               <Link to="https://t.me/stasnepom">telegram</Link>
               <Link to="https://github.com/stasnepomn">github</Link>
               <Link to="mailto:contact@stasn.ru" dashed>
