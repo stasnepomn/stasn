@@ -104,7 +104,7 @@ function App() {
             </div>
           </animated.div>
           <animated.div style={contentStyles} className="w-full">
-            <div className="mt-14 w-full break-words bg-white bg-opacity-20 p-5">
+            <div className="mt-14 w-full break-words bg-white bg-opacity-20 p-5 backdrop-blur-md">
               <main className="flex flex-col items-center justify-center space-x-0 space-y-5 md:flex-row md:space-y-0 md:space-x-5">
                 {projects.map((project) => (
                   <Card>
