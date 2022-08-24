@@ -8,6 +8,8 @@ import Abit from './assets/abit.svg';
 import Allay from './assets/allay.svg';
 import Engposts from './assets/engposts.svg';
 import Orakl from './assets/orakl.svg';
+import Funnel from './assets/funnel.svg';
+import Bot from './assets/bot.svg';
 import Portrait from './assets/portrait.png';
 import Blob from './assets/blob.mp4';
 
@@ -38,9 +40,27 @@ function App() {
       comment: false,
     },
     {
+      title: 'Orakl',
+      image: Orakl,
+      link: 'https://orakllab.xyz/',
+      comment: false,
+    },
+    {
       title: 'EngPosts',
       image: Engposts,
       link: 'https://engposts.com',
+      comment: false,
+    },
+    {
+      title: 'Open Funnels',
+      image: Funnel,
+      link: 'https://github.com/Borodutch/open-funnels-backend',
+      comment: false,
+    },
+    {
+      title: 'Bot finder',
+      image: Bot,
+      link: 'https://github.com/Borodutch/bot-finder',
       comment: false,
     },
     {
@@ -48,12 +68,6 @@ function App() {
       image: Abit,
       link: '#',
       comment: 'pilot',
-    },
-    {
-      title: 'Orakl',
-      image: Orakl,
-      link: 'https://orakllab.xyz/',
-      comment: false,
     },
     {
       title: 'Habba',
