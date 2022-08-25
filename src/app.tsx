@@ -74,6 +74,7 @@ function App() {
     },
     {
       title: 'Open Funnels',
+      subtitle: 'open-source',
       image: Funnel,
       link: 'https://github.com/Borodutch/open-funnels-backend',
       comment:
@@ -82,6 +83,7 @@ function App() {
     },
     {
       title: 'Bot finder',
+      subtitle: 'open-source',
       image: Bot,
       link: 'https://github.com/Borodutch/bot-finder',
       comment: 'Web extension for vc.ru, TJ and DTF',
