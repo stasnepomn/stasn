@@ -128,8 +128,8 @@ function App() {
               <Link to="https://t.me/stasnblog">blog</Link>
               <Link to="https://t.me/stasnepom">telegram</Link>
               <Link to="https://github.com/stasnepomn">github</Link>
-              <Link to="mailto:contact@stasn.ru" dashed>
-                contact@stasn.ru
+              <Link to="mailto:contact@stasn.me" dashed>
+                contact@stasn.me
               </Link>
             </div>
           </animated.div>
