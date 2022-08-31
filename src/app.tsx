@@ -27,6 +27,13 @@ function App() {
 
   const projects = [
     {
+      title: 'Habba',
+      image: Habba,
+      link: 'https://habba.app',
+      comment: 'Electronic queues made super easy',
+      soon: false,
+    },
+    {
       title: 'HTN Coach',
       subtitle: 'in pilot',
       image: Htn,
@@ -62,14 +69,6 @@ function App() {
       link: 'https://engposts.com',
       comment:
         'Flashcards that increase vocabulary, improve pronunciation and develop listening comprehension',
-      soon: false,
-    },
-    {
-      title: 'Habba',
-      subtitle: 'coming soon',
-      image: Habba,
-      link: 'https://habba.app',
-      comment: 'Electronic queues made super easy',
       soon: false,
     },
     {
