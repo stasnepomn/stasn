@@ -30,6 +30,7 @@ function App() {
       title: 'Habba',
       image: Habba,
       link: 'https://habba.app',
+      vc: 'https://vc.ru/tribuna/494193-habba-ocheredi-bez-lishnego',
       comment: 'Electronic queues made super easy',
       soon: false,
     },
@@ -165,6 +166,20 @@ function App() {
                             className="ml-2 border-b-2 border-sky-700 border-opacity-40 font-normal text-sky-700 transition-all hover:opacity-60"
                           >
                             check out
+                          </a>
+                        )}
+                        {project.subtitle && (
+                          <span className="ml-2 font-light opacity-50">
+                            {project.subtitle}
+                          </span>
+                        )}
+                        {project.vc && (
+                          <a
+                            href={project.vc}
+                            target="_blank"
+                            className="ml-2 border-b-2 border-sky-700 border-opacity-40 font-normal text-sky-700 transition-all hover:opacity-60"
+                          >
+                            VC.ru
                           </a>
                         )}
                         {project.subtitle && (
