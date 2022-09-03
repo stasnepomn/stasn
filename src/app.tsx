@@ -62,7 +62,7 @@ function App() {
       title: 'Dodoer',
       subtitle: 'coming soon',
       image: Dodoer,
-      comment: 'The one and only place for your startups',
+      comment: 'The easiest place to fund your startups',
       soon: false,
     },
     {
