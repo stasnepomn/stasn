@@ -168,11 +168,6 @@ function App() {
                             check out
                           </a>
                         )}
-                        {project.subtitle && (
-                          <span className="ml-2 font-light opacity-50">
-                            {project.subtitle}
-                          </span>
-                        )}
                         {project.vc && (
                           <a
                             href={project.vc}
