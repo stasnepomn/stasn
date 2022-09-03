@@ -135,10 +135,10 @@ function App() {
           </animated.div>
           <animated.div style={contentStyles} className="w-full">
             <div className="mt-14 w-full break-words">
-              <main className="mx-auto flex max-w-screen-sm flex-col items-start justify-center space-y-5">
+              <main className="mx-auto grid max-w-screen-lg grid-cols-1 flex-col items-start justify-center gap-5 md:grid-cols-2">
                 {projects.map((project) => (
                   <div className="flex w-full flex-row space-x-5 rounded-lg bg-white bg-opacity-20 p-5 shadow-sm backdrop-blur-md">
-                    <div className="flex min-w-fit items-center justify-center">
+                    <div className="flex min-w-fit items-center justify-center md:items-start">
                       {project.soon ? (
                         <img
                           src={project.image}
