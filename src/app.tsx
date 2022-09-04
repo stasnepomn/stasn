@@ -36,6 +36,13 @@ function App() {
       soon: false,
     },
     {
+      title: 'Dodoer',
+      subtitle: 'coming soon',
+      image: Dodoer,
+      comment: 'The best place to fund your startups',
+      soon: false,
+    },
+    {
       title: 'HTN Coach',
       subtitle: 'in pilot',
       image: Htn,
@@ -56,13 +63,6 @@ function App() {
       image: Bobbinet,
       link: 'https://bobbinet.com',
       comment: 'Decentralized health 4.0 application powered by AI',
-      soon: false,
-    },
-    {
-      title: 'Dodoer',
-      subtitle: 'coming soon',
-      image: Dodoer,
-      comment: 'The easiest place to fund your startups',
       soon: false,
     },
     {
