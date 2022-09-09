@@ -46,7 +46,7 @@ function App() {
               </span>
             </h1>
             <div className="pt-3 text-center text-xl font-light text-white text-opacity-50 md:text-2xl">
-              Developer.
+              Developer and entrepreneur.
             </div>
             <animated.div style={linkStyles} className="mt-10 px-5">
               <div className="flex break-before-all flex-col items-center justify-center space-y-2 pt-10 text-xl font-light text-gray-700 md:flex-row md:space-x-5 md:space-y-0 md:text-2xl">
