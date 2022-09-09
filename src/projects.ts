@@ -32,7 +32,7 @@ export const projects = [
   },
   {
     title: 'VelvetMind',
-    subtitle: 'coming soon',
+    subtitle: 'coming soon as open-source',
     image: VelvetMind,
     comment: 'Your personal mood diary',
   },
