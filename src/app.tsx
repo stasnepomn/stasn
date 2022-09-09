@@ -11,6 +11,7 @@ import Funnel from './assets/funnel.svg';
 import Bot from './assets/bot.svg';
 import Dodoer from './assets/dodoer.svg';
 import VelvetMind from './assets/velvetmind.svg';
+import TimeCross from './assets/timecross.png';
 import Portrait from './assets/portrait.png';
 import Blob from './assets/blob.webm';
 
@@ -34,6 +35,13 @@ function App() {
       link: 'https://habba.app',
       vc: 'https://vc.ru/tribuna/494193-habba-ocheredi-bez-lishnego',
       comment: 'Electronic queues made super easy',
+      soon: false,
+    },
+    {
+      title: 'TimeCross',
+      subtitle: 'coming soon',
+      image: TimeCross,
+      comment: 'Time management for remote teams',
       soon: false,
     },
     {
