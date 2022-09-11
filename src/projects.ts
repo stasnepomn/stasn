@@ -32,6 +32,7 @@ export const projects = [
   },
   {
     title: 'VelvetMind',
+    subtitle: 'open-source',
     image: VelvetMind,
     link: 'https://velvetmind.space/',
     comment: 'Your personal encrypted diary',
