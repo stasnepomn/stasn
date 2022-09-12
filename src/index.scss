@@ -43,7 +43,7 @@ body {
 }
 
 .card {
-  @apply flex w-full flex-row items-center space-x-5 rounded-lg bg-slate-500 bg-opacity-20 p-5 backdrop-blur-md;
+  @apply flex w-full flex-row items-center space-x-5 rounded-lg bg-slate-500 bg-opacity-10 p-5 backdrop-blur-md;
 
   &__image {
     @apply flex min-w-fit items-center justify-center;
