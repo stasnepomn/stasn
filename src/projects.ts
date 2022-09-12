@@ -32,9 +32,10 @@ export const projects = [
   },
   {
     title: 'VelvetMind',
-    subtitle: 'coming soon',
+    subtitle: 'open-source',
     image: VelvetMind,
-    comment: 'Your personal mood diary',
+    link: 'https://velvetmind.space/',
+    comment: 'Your personal encrypted diary',
   },
   {
     title: 'Dodoer',
