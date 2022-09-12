@@ -13,7 +13,7 @@ import TimeCross from './assets/timecross.png';
 
 export const projects = [
   {
-    title: 'Habba',
+    title: 'Habba Go',
     image: Habba,
     link: 'https://habba.app',
     posts: [
