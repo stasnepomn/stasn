@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-t from-slate-900 to-neutral-800;
+}
+
+.blob {
+  @apply absolute top-0 left-0 h-screen w-screen object-cover;
+}
+
+.footer {
+  @apply mx-auto max-w-screen-md pb-10 text-center text-sm text-white text-opacity-50;
+}
+
+.wrapper {
+  @apply relative flex flex-1 flex-col items-center justify-center py-10;
+}
+
+.title {
+  @apply break-words text-center text-3xl font-light text-white md:text-4xl;
+
+  &__gradient {
+    @apply bg-gradient-to-r from-green-400 to-sky-400 bg-clip-text font-medium text-transparent;
+  }
+}
+
+.subtitle {
+  @apply pt-3 text-center text-xl font-light text-white text-opacity-50 md:text-2xl;
+}
+
+.portrait {
+  @apply mx-auto mb-5 h-60 w-60;
+}
+
+.links {
+  @apply mt-10 flex break-before-all flex-col items-center justify-center space-y-2 px-5 pt-10 text-xl font-light text-gray-700 md:flex-row md:space-x-5 md:space-y-0 md:text-2xl;
+}
+
+.projects {
+  @apply mx-auto mt-14 grid w-full max-w-screen-lg grid-cols-1 flex-col items-stretch justify-center gap-5 break-words md:grid-cols-2;
+}
+
+.card {
+  @apply flex w-full flex-row space-x-5 rounded-lg bg-slate-500 bg-opacity-20 p-5 backdrop-blur-md;
+
+  &__image {
+    @apply flex min-w-fit items-center justify-center;
+  }
+
+  &__content {
+    @apply flex flex-col space-y-1;
+  }
+
+  &__header {
+    @apply space-x-2 text-lg font-medium text-white opacity-80 md:text-xl;
+  }
+
+  &__subtitle {
+    @apply font-light text-white opacity-50;
+  }
+
+  &__comment {
+    @apply text-base text-white opacity-50 md:text-lg;
+  }
+}

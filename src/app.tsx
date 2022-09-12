@@ -1,10 +1,13 @@
+import { FunctionComponent } from 'preact';
 import { useSpring, animated } from 'react-spring';
-import Link from './components/Link';
 import Portrait from './assets/portrait.png';
 import Blob from './assets/blob.webm';
 import { projects } from './projects';
+import Link from './components/Link';
+import { Footer } from './components/Footer';
+import { Card } from './components/Card';
 
-function App() {
+export const App: FunctionComponent = () => {
   const contentStyles = useSpring({
     delay: 1500,
     to: [{ opacity: 1 }],
@@ -23,15 +26,39 @@ function App() {
     from: { opacity: 0 },
   });
 
+  const blobStyles = useSpring({
+    delay: 200,
+    to: [{ opacity: 1 }],
+    from: { opacity: 0 },
+  });
+
   return (
     <>
-      <video
+      <animated.video
         src={Blob}
+        style={blobStyles}
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 h-screen w-screen object-cover"
+        className="blob"
       />
+<<<<<<< HEAD
+      <main className="wrapper">
+        <animated.section style={titleStyles} className="mt-10 px-5">
+          <img src={Portrait} className="portrait" />
+          <h1 className="title">
+            Hello, I am{' '}
+            <span className="title__gradient">Stanislav Nepomniashchikh.</span>
+          </h1>
+          <h2 className="subtitle">Developer.</h2>
+          <animated.div style={linkStyles} className="links">
+            <Link to="https://t.me/stasnblog">blog</Link>
+            <Link to="https://t.me/stasnepom">telegram</Link>
+            <Link to="https://github.com/stasnepomn">github</Link>
+            <Link to="mailto:contact@stasn.me" dashed>
+              contact@stasn.me
+            </Link>
+=======
       <div className="flex flex-col">
         <div className="relative flex flex-1 flex-col items-center justify-center py-10">
           <animated.div style={titleStyles} className="mt-10 px-5">
@@ -111,16 +138,23 @@ function App() {
                 ))}
               </main>
             </div>
+>>>>>>> e9c2860786f0366e515ead13689ac631bbd41590
           </animated.div>
-        </div>
-        <animated.div style={contentStyles}>
-          <footer className="mx-auto max-w-screen-md pb-10 text-center text-sm text-white opacity-50">
-            {new Date().getFullYear()} &copy; Stanislav Nepomniashchikh. Love.
-          </footer>
-        </animated.div>
-      </div>
+        </animated.section>
+        <animated.section style={contentStyles} className="projects">
+          {projects.map((project) => (
+            <Card
+              image={project.image}
+              title={project.title}
+              subtitle={project.subtitle}
+              link={project.link}
+              posts={project.posts}
+              comment={project.comment}
+            />
+          ))}
+        </animated.section>
+      </main>
+      <Footer />
     </>
   );
-}
-
-export default App;
+};
