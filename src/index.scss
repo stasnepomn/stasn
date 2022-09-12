@@ -64,6 +64,10 @@ body {
   &__comment {
     @apply text-base text-white opacity-50 md:text-lg;
   }
+
+  &__stack {
+    @apply text-sm text-white text-opacity-30;
+  }
 }
 
 .section-text {

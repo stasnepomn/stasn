@@ -85,6 +85,7 @@ export const App: FunctionComponent = () => {
               link={project.link}
               posts={project.posts}
               comment={project.comment}
+              stack={project.stack}
             />
           ))}
         </animated.section>

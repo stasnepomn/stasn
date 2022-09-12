@@ -8,11 +8,13 @@ interface CardProps {
   link?: string;
   posts?: any[];
   comment: string;
+  stack?: string;
 }
 
 export const Card: FunctionComponent<CardProps> = ({
   comment,
   image,
+  stack,
   title,
   link,
   posts,
@@ -35,6 +37,7 @@ export const Card: FunctionComponent<CardProps> = ({
           {subtitle && <span className="card__subtitle">{subtitle}</span>}
         </div>
         <div className="card__comment">{comment}</div>
+        {stack && <div className="card__stack">{stack}</div>}
       </div>
     </div>
   );
