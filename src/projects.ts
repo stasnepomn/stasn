@@ -29,6 +29,7 @@ export const projects = [
     title: 'TimeCross',
     subtitle: 'release soon',
     image: TimeCross,
+    stack: 'Ruby on Rails, Turbo Streams',
     comment: 'Time management for remote teams',
   },
   {
