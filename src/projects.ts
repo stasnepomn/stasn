@@ -25,13 +25,13 @@ export const projects = [
     stack: 'Preact, Koa, MongoDB, YooKassa',
     comment: 'Electronic queues made super easy',
   },
-  {
-    title: 'TimeCross',
-    subtitle: 'release soon',
-    image: TimeCross,
-    stack: 'Ruby on Rails, Turbo Streams',
-    comment: 'Time management for remote teams',
-  },
+  // {
+  //   title: 'TimeCross',
+  //   subtitle: 'release soon',
+  //   image: TimeCross,
+  //   stack: 'Ruby on Rails, Turbo Streams',
+  //   comment: 'Time management for remote teams',
+  // },
   {
     title: 'VelvetMind',
     subtitle: 'open-source',
@@ -40,12 +40,12 @@ export const projects = [
     comment: 'Your personal encrypted diary',
     stack: 'React, Koa, MongoDB',
   },
-  {
-    title: 'Dodoer',
-    subtitle: 'release soon',
-    image: Dodoer,
-    comment: 'The best place to fund your startups',
-  },
+  // {
+  //   title: 'Dodoer',
+  //   subtitle: 'release soon',
+  //   image: Dodoer,
+  //   comment: 'The best place to fund your startups',
+  // },
   {
     title: 'HTN Coach',
     subtitle: 'in pilot',
