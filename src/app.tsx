@@ -49,7 +49,7 @@ export const App: FunctionComponent = () => {
             Hello, I am{' '}
             <span className="title__gradient">Stanislav Nepomniashchikh.</span>
           </h1>
-          <h2 className="subtitle">Developer and entrepreneur.</h2>
+          <h2 className="subtitle">Cool stuff creator.</h2>
           <animated.div style={linkStyles} className="links">
             <Link to="https://t.me/stasnblog">blog</Link>
             <Link to="https://t.me/stasnepom">telegram</Link>
