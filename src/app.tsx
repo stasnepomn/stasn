@@ -60,7 +60,7 @@ export const App: FunctionComponent = () => {
           </animated.div>
         </animated.section>
         <animated.div style={contentStyles} className="section-text">
-          List of my projects{' '}
+          Projects{' '}
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -22,9 +22,6 @@ export const Card: FunctionComponent<CardProps> = ({
 }) => {
   return (
     <div className="card">
-      <div className="card__image">
-        <img src={image} alt={title} width={70} height={70} />
-      </div>
       <div className="card__content">
         <div className="card__header">
           <span className="card__title">{title}</span>
@@ -37,7 +34,6 @@ export const Card: FunctionComponent<CardProps> = ({
           {subtitle && <span className="card__subtitle">{subtitle}</span>}
         </div>
         <div className="card__comment">{comment}</div>
-        {stack && <div className="card__stack">{stack}</div>}
       </div>
     </div>
   );
