@@ -62,7 +62,7 @@ body {
   }
 
   &__comment {
-    @apply text-base text-white opacity-50 md:text-lg;
+    @apply text-base font-light text-white opacity-50 md:text-lg;
   }
 
   &__stack {

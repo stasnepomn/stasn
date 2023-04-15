@@ -79,13 +79,11 @@ export const App: FunctionComponent = () => {
         <animated.section style={contentStyles} className="projects">
           {projects.map((project) => (
             <Card
-              image={project.image}
               title={project.title}
               subtitle={project.subtitle}
               link={project.link}
               posts={project.posts}
               comment={project.comment}
-              stack={project.stack}
             />
           ))}
         </animated.section>

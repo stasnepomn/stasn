@@ -2,7 +2,6 @@ import { FunctionComponent } from 'preact';
 import Link from './Link';
 
 interface CardProps {
-  image: string;
   title: string;
   subtitle?: string;
   link?: string;
@@ -13,8 +12,6 @@ interface CardProps {
 
 export const Card: FunctionComponent<CardProps> = ({
   comment,
-  image,
-  stack,
   title,
   link,
   posts,
