@@ -38,6 +38,12 @@ export const projects = [
     comment:
       'Service for monitoring patients with chronic diseases of the cardiovascular system in partnership with Omron',
   },
+  {
+    title: 'Palme',
+    link: 'https://www.palmeschool.com/',
+    stack: 'Yii2, MySQL, Box, Stripe',
+    comment: 'Online Russian language school in the USA and Canada',
+  },
   // {
   //   title: 'Orakl Lab',
   //   subtitle: 'pilot soon',
