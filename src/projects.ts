@@ -44,6 +44,12 @@ export const projects = [
     stack: 'Yii2, MySQL, Box, Stripe',
     comment: 'Online Russian language school in the USA and Canada',
   },
+  {
+    title: 'Todorant',
+    link: 'https://todorant.com/',
+    stack: 'TypeScript, Vue2, Koa, MongoDB',
+    comment: 'Smart to-do app that will help you get your tasks done faster',
+  },
   // {
   //   title: 'Orakl Lab',
   //   subtitle: 'pilot soon',
