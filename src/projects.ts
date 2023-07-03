@@ -1,5 +1,11 @@
 export const projects = [
   {
+    title: 'Stigma',
+    link: 'https://stigmacare.com/',
+    stack: '',
+    comment: 'The only weight loss service that supports and guides you',
+  },
+  {
     title: 'Habba Go',
     link: 'https://habba.app',
     posts: [
