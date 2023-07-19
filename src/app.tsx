@@ -51,7 +51,7 @@ export const App: FunctionComponent = () => {
           </h1>
           <h2 className="subtitle">Cool stuff creator.</h2>
           <animated.div style={linkStyles} className="links">
-            <Link to="https://t.me/endiffque">blog</Link>
+            {/* <Link to="https://t.me/endiffque">blog</Link> */}
             <Link to="https://t.me/stasnepom">telegram</Link>
             <Link to="https://github.com/stasnepomn">github</Link>
             <Link to="mailto:contact@stasn.me" dashed>
