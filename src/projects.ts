@@ -5,18 +5,18 @@ export const projects = [
     stack: '',
     comment: 'The only weight loss service that supports and guides you',
   },
-  {
-    title: 'Habba Go',
-    link: 'https://habba.app',
-    posts: [
-      {
-        title: 'vc.ru',
-        href: 'https://vc.ru/tribuna/494193-habba-ocheredi-bez-lishnego',
-      },
-    ],
-    stack: 'Preact, Koa, MongoDB, YooKassa',
-    comment: 'Electronic queues made super easy',
-  },
+  // {
+  //   title: 'Habba Go',
+  //   link: 'https://habba.app',
+  //   posts: [
+  //     {
+  //       title: 'vc.ru',
+  //       href: 'https://vc.ru/tribuna/494193-habba-ocheredi-bez-lishnego',
+  //     },
+  //   ],
+  //   stack: 'Preact, Koa, MongoDB, YooKassa',
+  //   comment: 'Electronic queues made super easy',
+  // },
   // {
   //   title: 'TimeCross',
   //   subtitle: 'release soon',
@@ -110,11 +110,11 @@ export const projects = [
     comment:
       'Open-source solutions for intuitive way of tracking and analyzing user behavior',
   },
-  {
-    title: 'Bot finder',
-    subtitle: 'open source',
-    stack: 'JavaScript',
-    link: 'https://github.com/Borodutch/bot-finder',
-    comment: 'Browser extension for vc.ru, TJ and DTF',
-  },
+  // {
+  //   title: 'Bot finder',
+  //   subtitle: 'open source',
+  //   stack: 'JavaScript',
+  //   link: 'https://github.com/Borodutch/bot-finder',
+  //   comment: 'Browser extension for vc.ru, TJ and DTF',
+  // },
 ];
