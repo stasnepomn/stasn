@@ -49,9 +49,9 @@ export const App: FunctionComponent = () => {
             Hello, I am{' '}
             <span className="title__gradient">Stanislav Nepomniashchikh.</span>
           </h1>
-          <h2 className="subtitle">Cool stuff creator.</h2>
+          <h2 className="subtitle">Software engineer.</h2>
           <animated.div style={linkStyles} className="links">
-            {/* <Link to="https://t.me/endiffque">blog</Link> */}
+            <Link to="https://t.me/endiffq">blog</Link>
             <Link to="https://t.me/stasnepom">telegram</Link>
             <Link to="https://github.com/stasnepomn">github</Link>
             <Link to="mailto:contact@stasn.me" dashed>
@@ -59,36 +59,7 @@ export const App: FunctionComponent = () => {
             </Link>
           </animated.div>
         </animated.section>
-        <animated.div style={contentStyles} className="section-text">
-          Took part in projects{' '}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="inline-block h-6 w-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"
-            />
-          </svg>
-        </animated.div>
-        <animated.section style={contentStyles} className="projects">
-          {projects.map((project) => (
-            <Card
-              title={project.title}
-              subtitle={project.subtitle}
-              link={project.link}
-              posts={project.posts}
-              comment={project.comment}
-            />
-          ))}
-        </animated.section>
       </main>
-      <Footer />
     </>
   );
 };

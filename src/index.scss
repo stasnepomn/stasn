@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-t from-slate-900 to-neutral-800;
+  @apply h-full min-h-screen bg-neutral-900;
 }
 
 .blob {
@@ -35,7 +35,7 @@ body {
 }
 
 .links {
-  @apply mt-20 flex break-before-all flex-col items-center justify-center space-y-2 px-5 text-xl font-light text-gray-700 md:flex-row md:space-x-5 md:space-y-0 md:text-2xl;
+  @apply flex break-before-all flex-col items-center justify-center space-y-4 py-20 px-5 text-xl font-light text-gray-700 md:flex-row md:space-x-8 md:space-y-0 md:text-2xl;
 }
 
 .projects {
