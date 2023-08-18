@@ -1,22 +1,16 @@
 export const projects = [
   {
-    title: 'Stigma',
-    link: 'https://stigmacare.com/',
-    stack: '',
-    comment: 'The only weight loss service that supports and guides you',
+    title: 'Habba Go',
+    link: 'https://habba.app',
+    posts: [
+      {
+        title: 'vc.ru',
+        href: 'https://vc.ru/tribuna/494193-habba-ocheredi-bez-lishnego',
+      },
+    ],
+    stack: 'Preact, Koa, MongoDB, YooKassa',
+    comment: 'Electronic queues made super easy',
   },
-  // {
-  //   title: 'Habba Go',
-  //   link: 'https://habba.app',
-  //   posts: [
-  //     {
-  //       title: 'vc.ru',
-  //       href: 'https://vc.ru/tribuna/494193-habba-ocheredi-bez-lishnego',
-  //     },
-  //   ],
-  //   stack: 'Preact, Koa, MongoDB, YooKassa',
-  //   comment: 'Electronic queues made super easy',
-  // },
   // {
   //   title: 'TimeCross',
   //   subtitle: 'release soon',
@@ -71,13 +65,12 @@ export const projects = [
   //   comment: 'Decentralized health 4.0 application powered by AI',
   //   stack: 'Solidity, TypeScript, Flutter',
   // },
-  // {
-  //   title: 'Abit',
-  //   subtitle: 'info soon',
-  //   image: Abit,
-  //   stack: 'Django 4, Vue 2, Redis, NestJS (microservices), PostgreSQL',
-  //   comment: 'University highload database solutions',
-  // },
+  {
+    title: 'Abit',
+    subtitle: '',
+    stack: 'Django 4, Vue 2, Redis, NestJS (microservices), PostgreSQL',
+    comment: 'University highload database solutions',
+  },
   // {
   //   title: 'Allay',
   //   subtitle: 'coming soon',
@@ -89,7 +82,7 @@ export const projects = [
   {
     title: 'EngPosts',
     stack: 'Vue 2, Koa, MongoDB, Strapi',
-    link: 'https://engposts.com',
+    subtitle: 'closed',
     comment:
       'Flashcards that increase vocabulary, improve pronunciation and develop listening comprehension',
   },
