@@ -52,7 +52,7 @@ export const App: FunctionComponent = () => {
           <h2 className="subtitle">Software engineer.</h2>
           <animated.div style={linkStyles} className="links">
             <Link to="https://t.me/stnepomn">blog</Link>
-            <Link to="https://t.me/stnepom">telegram</Link>
+            <Link to="https://t.me/stnepo">telegram</Link>
             <Link to="https://github.com/stasnepomn">github</Link>
             <Link to="mailto:contact@stasn.me" dashed>
               contact@stasn.me
