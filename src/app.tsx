@@ -1,18 +1,15 @@
 import { FunctionComponent } from 'preact';
 import { useSpring, animated } from 'react-spring';
+import { toast } from 'react-toastify';
 import Portrait from './assets/portrait.png';
 import Blob from './assets/blob.webm';
-import { projects } from './projects';
 import Link from './components/Link';
-import { Footer } from './components/Footer';
-import { Card } from './components/Card';
+import { useCopyToClipboard } from './hooks/useCopyToClipboard';
+
+const ethAddress = 'stasn.eth';
 
 export const App: FunctionComponent = () => {
-  const contentStyles = useSpring({
-    delay: 1500,
-    to: [{ opacity: 1 }],
-    from: { opacity: 0 },
-  });
+  const [_, copy] = useCopyToClipboard();
 
   const linkStyles = useSpring({
     delay: 1000,
@@ -49,9 +46,17 @@ export const App: FunctionComponent = () => {
             Hello, I am{' '}
             <span className="title__gradient">Stanislav Nepomniashchikh.</span>
           </h1>
-          <h2 className="subtitle">Software engineer.</h2>
+          <h2 className="subtitle">Web3 engineer.</h2>
           <animated.div style={linkStyles} className="links">
-            <Link to="https://t.me/stnepomn">blog</Link>
+            <div
+              onClick={() => {
+                copy(ethAddress);
+                toast.success('Ethereum address successfully copied');
+              }}
+              className="cursor-pointer border-b-2 border-dashed border-sky-400  border-opacity-40 font-light text-sky-400 transition hover:border-green-500 hover:text-green-500 group-hover:border-green-300 group-hover:text-green-500"
+            >
+              {ethAddress}
+            </div>
             <Link to="https://to.stasn.me/tg">telegram</Link>
             <Link to="https://github.com/stasnepomn">github</Link>
             <Link to="mailto:contact@stasn.me" dashed>
