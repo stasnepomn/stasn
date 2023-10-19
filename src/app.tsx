@@ -60,6 +60,7 @@ export const App: FunctionComponent = () => {
             >
               {ethAddress}
             </div>
+            <Link to="https://blog.stasn.me/">blog</Link>
             <Link to="https://to.stasn.me/tg">tg</Link>
             <Link to="https://github.com/stasnepomn">github</Link>
             <div
