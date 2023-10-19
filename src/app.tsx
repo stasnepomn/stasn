@@ -43,15 +43,11 @@ export const App: FunctionComponent = () => {
       <main className="wrapper">
         <animated.section style={titleStyles} className="mt-10 px-5">
           <img src={Portrait} className="portrait" />
-          <div className="rounded-2xl bg-black/20 py-6 px-10 backdrop-blur-md">
-            <h1 className="title">
-              Hello, I am{' '}
-              <span className="title__gradient">
-                Stanislav Nepomniashchikh.
-              </span>
-            </h1>
-            <h2 className="subtitle">Web3 engineer & full stack developer.</h2>
-          </div>
+          <h1 className="title">
+            Hello, I am{' '}
+            <span className="title__gradient">Stanislav Nepomniashchikh.</span>
+          </h1>
+          <h2 className="subtitle">Web3 engineer & full stack developer.</h2>
           <animated.div style={linkStyles} className="links">
             <div
               onClick={() => {
