@@ -47,7 +47,7 @@ export const App: FunctionComponent = () => {
             Hello, I am{' '}
             <span className="title__gradient">Stanislav Nepomniashchikh.</span>
           </h1>
-          <h2 className="subtitle">Web3 engineer & full stack developer.</h2>
+          <h2 className="subtitle">Things developer.</h2>
           <animated.div style={linkStyles} className="links">
             <div
               onClick={() => {
