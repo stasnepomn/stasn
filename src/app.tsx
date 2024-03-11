@@ -6,7 +6,6 @@ import Blob from './assets/blob.webm';
 import Link from './components/Link';
 import { useCopyToClipboard } from './hooks/useCopyToClipboard';
 
-const ethAddress = 'stasn.eth';
 const emailAddress = 'contact@stasn.me';
 
 export const App: FunctionComponent = () => {
@@ -49,19 +48,7 @@ export const App: FunctionComponent = () => {
           </h1>
           <h2 className="subtitle">Things developer.</h2>
           <animated.div style={linkStyles} className="links">
-            <div
-              onClick={() => {
-                copy(ethAddress);
-                toast.success('Copied .eth address', {
-                  className: 'font-sans',
-                });
-              }}
-              className="cursor-pointer border-b-2 border-dashed border-sky-400  border-opacity-40 font-light text-sky-400 transition hover:border-green-500 hover:text-green-500 group-hover:border-green-300 group-hover:text-green-500"
-            >
-              {ethAddress}
-            </div>
-            <Link to="https://blog.stasn.me/">blog</Link>
-            <Link to="https://to.stasn.me/tg">tg</Link>
+            <Link to="https://to.stasn.me/tg">telegram</Link>
             <Link to="https://github.com/stasnepomn">github</Link>
             <div
               onClick={() => {
