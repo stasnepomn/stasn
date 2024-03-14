@@ -3,7 +3,7 @@ module.exports = {
   darkMode: 'media',
   theme: {
     fontFamily: {
-      sans: ['Roboto Mono', 'monospace'],
+      sans: ['Lato', 'monospace'],
     },
   },
   variants: {

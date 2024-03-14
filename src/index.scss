@@ -31,7 +31,7 @@ body {
 }
 
 .portrait {
-  @apply mx-auto mb-5 h-60 w-60;
+  @apply mx-auto mb-5 h-60 w-60 rounded-full;
 }
 
 .links {

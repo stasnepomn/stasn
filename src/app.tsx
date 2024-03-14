@@ -1,8 +1,7 @@
 import { FunctionComponent } from 'preact';
 import { useSpring, animated } from 'react-spring';
 import { toast } from 'react-toastify';
-import Portrait from './assets/portrait.png';
-import Blob from './assets/blob.webm';
+import Portrait from './assets/avatar.png';
 import Link from './components/Link';
 import { useCopyToClipboard } from './hooks/useCopyToClipboard';
 
@@ -23,33 +22,17 @@ export const App: FunctionComponent = () => {
     from: { opacity: 0 },
   });
 
-  const blobStyles = useSpring({
-    delay: 200,
-    to: [{ opacity: 1 }],
-    from: { opacity: 0 },
-  });
-
   return (
     <>
-      <animated.video
-        src={Blob}
-        style={blobStyles}
-        autoPlay
-        loop
-        muted
-        className="blob"
-      />
       <main className="wrapper">
         <animated.section style={titleStyles} className="mt-10 px-5">
           <img src={Portrait} className="portrait" />
           <h1 className="title">
-            Hello, I am{' '}
-            <span className="title__gradient">Stanislav Nepomniashchikh.</span>
+            <span className="title__gradient">Stanislav Nepomniashchikh</span>
           </h1>
-          <h2 className="subtitle">Things developer.</h2>
+          <h2 className="subtitle">Tech entrepreneur</h2>
           <animated.div style={linkStyles} className="links">
             <Link to="https://to.stasn.me/tg">telegram</Link>
-            <Link to="https://github.com/stasnepomn">github</Link>
             <div
               onClick={() => {
                 copy(emailAddress);
