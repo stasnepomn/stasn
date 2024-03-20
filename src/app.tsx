@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'preact';
 import { useSpring, animated } from 'react-spring';
 import { toast } from 'react-toastify';
-import Portrait from './assets/avatar.png';
+import Portrait from './assets/avatar.webp';
 import Link from './components/Link';
 import { useCopyToClipboard } from './hooks/useCopyToClipboard';
 
@@ -36,7 +36,7 @@ export const App: FunctionComponent = () => {
             <div
               onClick={() => {
                 copy(emailAddress);
-                toast.success('Copied email address', {
+                toast.success('Copied', {
                   className: 'font-sans',
                 });
               }}

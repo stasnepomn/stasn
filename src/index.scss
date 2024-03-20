@@ -19,10 +19,10 @@ body {
 }
 
 .title {
-  @apply break-words text-center text-3xl font-light text-white md:text-4xl;
+  @apply break-words text-center text-3xl font-semibold text-white md:text-4xl;
 
   &__gradient {
-    @apply bg-gradient-to-r from-green-400 to-sky-400 bg-clip-text font-medium text-transparent;
+    @apply bg-gradient-to-r from-green-400 to-sky-400 bg-clip-text text-transparent;
   }
 }
 
